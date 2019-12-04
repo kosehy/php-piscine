@@ -66,6 +66,6 @@ You can find me on:
 Enjoy!
 
 [42]: http://42.us.org "42 USA"
-[pdf]: pdf
+[pdf]: https://github.com/kosehy/php-piscine/blob/master/d00.en.pdf
 
 [kosehy]: https://github.com/kosehy
