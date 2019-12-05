@@ -1,0 +1,136 @@
+.actinide
+{
+    background-color: #c9fea7;
+}
+
+.alkalimetal
+{
+    background-color: #ffff66;
+}
+
+.alkalineearthmetals
+{
+    background-color: #b5a665;
+}
+
+.halogen
+{
+    background-color: #38ff2d;
+}
+
+.lanthanide
+{
+    background-color: #dcfea7;
+}
+
+.metalloid
+{
+    background-color: #eda1d6;
+}
+
+.nonmetal
+{
+    background-color: #99ebff;
+}
+
+.noblegas
+{
+    background-color: #e5871b;
+}
+
+.posttransmetal
+{
+    background-color: #c6c6c6;
+}
+
+.synthetic
+{
+    background-color: #f9f9f9;
+}
+
+.transmetal
+{
+    background-color: #effea9;
+}
+
+.aNum
+{
+    float: left;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 1vw;
+}
+
+.aW
+{
+    font-size: 1vw;
+    float: right;
+}
+
+.below
+{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+}
+
+.elem
+{
+    color: black;
+    position: relative;
+    margin: 2px;
+}
+
+H1
+{
+    color: white;
+    text-align: center;
+    font-family: Arial Black, Gadget, sans-serif;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.ElementTable
+{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    height: 80vh;
+}
+
+.pRow
+{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-column-gap: 1px;
+}
+
+
+
+.invisible
+{
+    visibility: hidden;
+}
+
+.sym
+{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
