@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Basics</title>
+</head>
+    <style>
+    table, th, td, tr {
+        border: 1px solid black;
+    }
+    </style>
+    <img src="./img/periodic-table_intro.png" width="1000" height="500" align="center">
+    <hr>
+    <table id="periodic table of elements" bgcolor="#ffe4c4">
+        <tr id="p1" bgcolor="#ff7f50">
+            <td id="H" title="Hydrogen"><sub>1</sub>H<sup>1.008</sup></td>
+            <td class="empty" bgcolor="white" colspan="16"></td>
+            <td id="He" title="Helium"><sub>2</sub>He<sup>4.0026022</sup></td>
+        </tr>
+        <tr id="p2" bgcolor="#a52a2a">
+            <td id="Li" title="Lithium"><sub>3</sub>Li<sup>6.94</sup></td>
+            <td id="Be" title="Beryllium"><sub>4</sub>Be<sup>9.01218315</sup></td>
+            <td class="empty" bgcolor="white" colspan="10"></td>
+            <td id="B" title="Boron"><sub>5</sub>B<sup>10.81</sup></td>
+            <td id="C" title="Carbon"><sub>6</sub>C<sup>12.011</sup></td>
+            <td id="N" title="Nitrogen"><sub>7</sub>N<sup>14.007</sup></td>
+            <td id="O" title="Oxygen"><sub>8</sub>O<sup>15.999</sup></td>
+            <td id="F" title="Fluorine"><sub>9</sub>F<sup>18.9984031636</sup></td>
+            <td id="Ne" title="Neon"><sub>10</sub>Ne<sup>20.17976</sup></td>
+        </tr>
+        <tr id="p3" bgcolor="#9932cc">
+            <td id="Na" title="Sodium"><sub>11</sub>Na<sup>22.989769282</sup></td>
+            <td id="Mg" title="Magnesium"><sub>12</sub>Mg<sup>24.305</sup></td>
+            <td class="empty" bgcolor="white" colspan="10"></td>
+            <td id="Al" title="Aluminium"><sub>13</sub>Al<sup>26.98153857</sup></td>
+            <td id="Si" title="Silicon"><sub>14</sub>Si<sup>28.085</sup></td>
+            <td id="P" title="Phosphorus"><sub>15</sub>P<sup>30.9737619985</sup></td>
+            <td id="S" title="Sulfur"><sub>16</sub>S<sup>32.06</sup></td>
+            <td id="Cl" title="Chiorine"><sub>17</sub>Cl<sup>35.45</sup></td>
+            <td id="Ar" title="Argon"><sub>18</sub>Ar<sup>39.9481</sup></td>
+        </tr>
+        <tr id="p4" bgcolor="#effea9">
+            <td id="K" title="Potassium"><sub>19</sub>K<sup>39.09831</sup></td>
+            <td id="Ca" title="Calcium"><sub>20</sub>Ca<sup>40.0784</sup></td>
+            <td id="Sc" title="Scandium"><sub>21</sub>Sc<sup>44.9559085</sup></td>
+            <td id="Ti" title="Titanium"><sub>22</sub>Ti<sup>47.8671</sup></td>
+            <td id="V" title="Vanadium"><sub>23</sub>V<sup>50.94151</sup></td>
+            <td id="Cr" title="Chromium"><sub>24</sub>Cr<sup>51.99616</sup></td>
+            <td id="Mn" title="Manganese"><sub>25</sub>Mn<sup>54.9380443</sup></td>
+            <td id="Fe" title="Iron"><sub>26</sub>Fe<sup>55.8452</sup></td>
+            <td id="Co" title="Cobalt"><sub>27</sub>Co<sup>58.9331944</sup></td>
+            <td id="Ni" title="Nickel"><sub>28</sub>Ni<sup>58.69344</sup></td>
+            <td id="Cu" title="Copper"><sub>29</sub>Cu<sup>63.5463</sup></td>
+            <td id="Zn" title="ZInc"><sub>30</sub>Zn<sup>65.382</sup></td>
+            <td id="Ga" title="Gallium"><sub>31</sub>Ga<sup>69.7231</sup></td>
+            <td id="Ge" title="Germanium"><sub>32</sub>Ge<sup>72.6308</sup></td>
+            <td id="As" title="Arsenic"><sub>33</sub>As<sup>74.9215956</sup></td>
+            <td id="Se" title="Selenium"><sub>34</sub>Se<sup>78.9718</sup></td>
+            <td id="Br" title="Boromine"><sub>35</sub>Br<sup>79.904</sup></td>
+            <td id="Kr" title="Krypton"><sub>36</sub>Kr<sup>83.7982</sup></td>
+        </tr>
+        <tr id="p5" bgcolor="#effea9">
+            <td id="Rb" title="Rubidium"><sub>37</sub>Rb<sup>85.46783</sup></td>
+            <td id="Sr" title="Strontium"><sub>38</sub>Sr<sup>87.621</sup></td>
+            <td id="Y" title="Yttrium"><sub>39</sub>Y<sup>88.905842</sup></td>
+            <td id="Zr" title="Zirconium"><sub>40</sub>Zr<sup>91.2242</sup></td>
+            <td id="Nb" title="Niobium"><sub>41</sub>Nb<sup>92.906372</sup></td>
+            <td id="Mo" title="Molybdenum"><sub>42</sub>Mo<sup>95.951</sup></td>
+            <td id="Tc" title="Technetium"><sub>43</sub>Tc<sup>98</sup></td>
+            <td id="Ru" title="Ruthenium"><sub>44</sub>Ru<sup>101.072</sup></td>
+            <td id="Rh" title="Rhodium"><sub>45</sub>Rh<sup>102.905502</sup></td>
+            <td id="Pd" title="Palladium"><sub>46</sub>Pd<sup>106.421</sup></td>
+            <td id="Ag" title="Silver"><sub>47</sub>Ag<sup>107.86822</sup></td>
+            <td id="Cd" title="Cadmium"><sub>48</sub>Cd<sup>112.4144</sup></td>
+            <td id="In" title="Indium"><sub>49</sub>In<sup>114.8181</sup></td>
+            <td id="Sn" title="Tin"><sub>50</sub>Sn<sup>118.7107</sup></td>
+            <td id="Sb" title="Antimony"><sub>51</sub>Sb<sup>121.7601</sup></td>
+            <td id="Te" title="Tellurium"><sub>52</sub>Te<sup>127.603</sup></td>
+            <td id="I" title="Iodine"><sub>53</sub>I<sup>126.904473</sup></td>
+            <td id="Xe" title="Xenon"><sub>54</sub>Xe<sup>131.2936</sup></td>
+        </tr>
+        <tr id="p6" bgcolor="#effea9">
+            <td id="Cs" title="Caesium"><sub>55</sub>Cs<sup>132.905451966</sup></td>
+            <td id="Ba" title="Barium"><sub>56</sub>Ba<sup>137.3277</sup></td>
+            <td class="empty" bgcolor="white" colspan="1"></td>
+            <td id="Hf" title="Hafnium"><sub>72</sub>Hf<sup>178.492</sup></td>
+            <td id="Ta" title="Tantalum"><sub>73</sub>Ta<sup>180.947882</sup></td>
+            <td id="W" title="Tungsten"><sub>74</sub>W<sup>183.841</sup></td>
+            <td id="Re" title="Rhenium"><sub>75</sub>Re<sup>186.2071</sup></td>
+            <td id="Os" title="Osmium"><sub>76</sub>Os<sup>190.233</sup></td>
+            <td id="Ir" title="Iridium"><sub>77</sub>Ir<sup>192.2173</sup></td>
+            <td id="Pt" title="Platinum"><sub>78</sub>Pt<sup>195.0849</sup></td>
+            <td id="Au" title="Gold"><sub>79</sub>Au<sup>196.9665695</sup></td>
+            <td id="Hg" title="Mercury"><sub>80</sub>Hg<sup>200.5923</sup></td>
+            <td id="Tl" title="Thallium"><sub>81</sub>Tl<sup>204.38</sup></td>
+            <td id="Pb" title="Lead"><sub>82</sub>Pb<sup>207.21</sup></td>
+            <td id="Bi" title="Bismuth"><sub>83</sub>Bi<sup>208.980401</sup></td>
+            <td id="Po" title="Polonium"><sub>84</sub>Po<sup>209</sup></td>
+            <td id="At" title="Astatine"><sub>85</sub>At<sup>210</sup></td>
+            <td id="Rn" title="Radon"><sub>86</sub>Rn<sup>222</sup></td>
+        </tr>
+        <tr id="p7" bgcolor="#effea9">
+            <td id="Fr" title="Francium"><sub>87</sub>Fr<sup>223</sup></td>
+            <td id="Ra" title="Radium"><sub>88</sub>Ra<sup>226</sup></td>
+            <td class="empty" bgcolor="white" colspan="1"></td>
+            <td id="Rf" title="Rutherfordium"><sub>104</sub>Rf<sup>267</sup></td>
+            <td id="Db" title="Dubnium"><sub>105</sub>Dd<sup>268</sup></td>
+            <td id="Sg" title="Seaborgium"><sub>106</sub>Sg<sup>269</sup></td>
+            <td id="Bh" title="Bohrium"><sub>107</sub>Bh<sup>270</sup></td>
+            <td id="Hs" title="Hassium"><sub>108</sub>Hs<sup>269</sup></td>
+            <td id="Mt" title="Meitnerium"><sub>109</sub>Mt<sup>278</sup></td>
+            <td id="Ds" title="Darmstadtium"><sub>110</sub>Ds<sup>281</sup></td>
+            <td id="Rg" title="Roentgenium"><sub>111</sub>Rg<sup>282</sup></td>
+            <td id="Cn" title="Copernicium"><sub>112</sub>Cn<sup>285</sup></td>
+            <td id="Nh" title="Nihonium"><sub>113</sub>Nh<sup>286</sup></td>
+            <td id="Fl" title="Flerovium"><sub>114</sub>Fl<sup>289</sup></td>
+            <td id="Mc" title="Moscovium"><sub>115</sub>Mc<sup>289</sup></td>
+            <td id="Lv" title="Livermorium"><sub>116</sub>Lv<sup>293</sup></td>
+            <td id="Ts" title="Tennessine"><sub>117</sub>Ts<sup>294</sup></td>
+            <td id="Og" title="Oganesson"><sub>118</sub>Og<sup>294</sup></td>
+        </tr>
+        <tr id="p8" bgcolor="#87ceeb">
+            <td id="Uue" title="Neon"><sub>10</sub>Uue<sup>315</sup></td>
+            <td class="empty" bgcolor="white" colspan="17"></td>
+        </tr>
+        <tr id="p9" bgcolor="#dcfea7">
+            <td class="empty" bgcolor="white" colspan="2"></td>
+            <td id="La" title="Lanthanum"><sub>57</sub>La<sup>138.905477</sup></td>
+            <td id="Ce" title="Cerium"><sub>58</sub>Ce<sup>140.1161</sup></td>
+            <td id="Pr" title="Praseodymium"><sub>59</sub>Pr<sup>140.907662</sup></td>
+            <td id="Nd" title="Neodymium"><sub>60</sub>Nd<sup>144.2423</sup></td>
+            <td id="Pm" title="Promethium"><sub>61</sub>Pm<sup>145</sup></td>
+            <td id="Sm" title="Samarium"><sub>62</sub>Sm<sup>150.362</sup></td>
+            <td id="Eu" title="Europium"><sub>63</sub>Eu<sup>151.9641</sup></td>
+            <td id="Gd" title="Gadolinium"><sub>64</sub>Gd<sup>157.253</sup></td>
+            <td id="Tb" title="Terbium"><sub>65</sub>Tb<sup>158.925352</sup></td>
+            <td id="Dy" title="Dysprosium"><sub>66</sub>Dy<sup>162.5001</sup></td>
+            <td id="Ho" title="Holmium"><sub>67</sub>Ho<sup>164.930332</sup></td>
+            <td id="Er" title="Erbium"><sub>68</sub>Er<sup>167.2593</sup></td>
+            <td id="Tm" title="Thulium"><sub>69</sub>Tm<sup>168.934222</sup></td>
+            <td id="Yb" title="Ytterbium"><sub>70</sub>Yb<sup>173.0451</sup></td>
+            <td id="Lu" title="Lutetium"><sub>71</sub>Lu<sup>174.96681</sup></td>
+            <td class="empty" bgcolor="white" colspan="1"></td>
+        </tr>
+        <tr id="p10" bgcolor="#c9fea7">
+            <td class="empty" bgcolor="white" colspan="2"></td>
+            <td id="Ac" title="Actinium"><sub>89</sub>Ac<sup>227</sup></td>
+            <td id="Th" title="Thorium"><sub>90</sub>Th<sup>232.03774</sup></td>
+            <td id="Pa" title="Protactinium"><sub>91</sub>pa<sup>231.035882</sup></td>
+            <td id="U" title="Uranium"><sub>92</sub>U<sup>238.028913</sup></td>
+            <td id="Np" title="Neptunium"><sub>93</sub>Np<sup>237</sup></td>
+            <td id="Pu" title="Plutonium"><sub>94</sub>Pu<sup>244</sup></td>
+            <td id="Am" title="Americium"><sub>95</sub>A,<sup>243</sup></td>
+            <td id="Cm" title="Curium"><sub>96</sub>C,<sup>247</sup></td>
+            <td id="Bk" title="Berkelium"><sub>97</sub>Bk<sup>247</sup></td>
+            <td id="Cf" title="Californium"><sub>98</sub>Cf<sup>251</sup></td>
+            <td id="Es" title="Einsteinium"><sub>99</sub>Es<sup>252</sup></td>
+            <td id="Fm" title="Fermium"><sub>100</sub>Fm<sup>257</sup></td>
+            <td id="Md" title="Mendelevium"><sub>101</sub>Md<sup>258</sup></td>
+            <td id="No" title="Nobelium"><sub>102</sub>No<sup>259</sup></td>
+            <td id="lr" title="Lawrencium"><sub>103</sub>Lr<sup>266</sup></td>
+            <td class="empty" bgcolor="white" colspan="1"></td>
+        </tr>
+    </table>
+</html>
+<script>
+    var i = 55;
+    var weight = [
+    22.989769282
+    ,24.305
+    ,26.98153857
+    ,28.085
+    ,30.9737619985
+    ,32.06
+    ,35.45
+    ,39.9481
+    ,39.09831
+    ,40.0784
+    ,44.9559085
+    ,47.8671
+    ,50.94151
+    ,51.99616
+    ,54.9380443
+    ,55.8452
+    ,58.9331944
+    ,58.69344
+    ,63.5463
+    ,65.382
+    ,69.7231
+    ,72.6308
+    ,74.9215956
+    ,78.9718
+    ,79.904
+    ,83.7982
+    ,85.46783
+    ,87.621
+    ,88.905842
+    ,91.2242
+    ,92.906372
+    ,95.951
+    ,98
+    ,101.072
+    ,102.905502
+    ,106.421
+    ,107.86822
+    ,112.4144
+    ,114.8181
+    ,118.7107
+    ,121.7601
+    ,127.603
+    ,126.904473
+    ,131.2936
+    ,132.905451966
+    ,137.3277
+    ,178.492
+    ,180.947882
+    ,183.841
+    ,186.2071
+    ,190.233
+    ,192.233
+    ,192.2173
+    ,195.0849
+    ,196.9665695
+    ,200.5923
+    ,204.38
+    ,207.21
+    ,208.980401
+    ,209
+    ,210
+    ,222
+    ,223
+    ,226
+    ,267
+    ,268
+    ,269
+    ,270
+    ,269
+    ,278
+    ,281
+    ,282
+    ,285
+    ,286
+    ,289
+    ,289
+    ,293
+    ,294
+    ,294
+    ,315
+    ,138.905477
+    ,140.1161
+    ,140.907662
+    ,144.2423
+    ,145
+    ,150.362
+    ,151.9641
+    ,157.253
+    ,158.925352
+    ,162.5001
+    ,164.930332
+    ,167.2593
+    ,168.934222
+    ,173.0451
+    ,174.96681
+    ,227
+    ,232.03774
+    ,231.035882
+    ,238.028913
+    ,237
+    ,244
+    ,243
+    ,247
+    ,247
+    ,251
+    ,252
+    ,257
+    ,258
+    ,259
+    ,266];
+var weight1 = [
+    1.008
+    ,4.0026022
+    ,6.94
+    ,9.01218315
+    ,10.81
+    ,12.011
+    ,14.007
+    ,15.999
+    ,18.9984031636
+    ,20.17976
+    ,22.989769282
+    ,24.305
+    ,26.98153857
+    ,28.085
+    ,30.9737619985
+    ,32.06
+    ,35.45
+    ,39.9481
+    ,39.09831
+    ,40.0784
+    ,44.9559085
+    ,47.8671
+    ,50.94151
+    ,51.99616
+    ,54.9380443
+    ,55.8452
+    ,58.9331944
+    ,58.69344
+    ,63.5463
+    ,65.382
+    ,69.7231
+    ,72.6308
+    ,74.9215956
+    ,78.9718
+    ,79.904
+    ,83.7982
+    ,85.46783
+    ,87.621
+    ,88.905842
+    ,91.2242
+    ,92.906372
+    ,95.951
+    ,98
+    ,101.072
+    ,102.905502
+    ,106.421
+    ,107.86822
+    ,112.4144
+    ,114.8181
+    ,118.7107
+    ,121.7601
+    ,127.603
+    ,126.904473
+    ,131.2936
+    ,132.905451966
+    ,137.3277
+    ,178.492
+    ,180.947882
+    ,183.841
+    ,186.2071
+    ,190.233
+    ,192.233
+    ,192.2173
+    ,195.0849
+    ,196.9665695
+    ,200.5923
+    ,204.38
+    ,207.21
+    ,208.980401
+    ,209
+    ,210
+    ,222
+    ,223
+    ,226
+    ,267
+    ,268
+    ,269
+    ,270
+    ,269
+    ,278
+    ,281
+    ,282
+    ,285
+    ,286
+    ,289
+    ,289
+    ,293
+    ,294
+    ,294
+    ,315
+    ,138.905477
+    ,140.1161
+    ,140.907662
+    ,144.2423
+    ,145
+    ,150.362
+    ,151.9641
+    ,157.253
+    ,158.925352
+    ,162.5001
+    ,164.930332
+    ,167.2593
+    ,168.934222
+    ,173.0451
+    ,174.96681
+    ,227
+    ,232.03774
+    ,231.035882
+    ,238.028913
+    ,237
+    ,244
+    ,243
+    ,247
+    ,247
+    ,251
+    ,252
+    ,257
+    ,258
+    ,259
+    ,266];
+</script>

@@ -1,0 +1,21 @@
+body
+{
+    background-color: dimgrey;
+}
+
+.top
+{
+    margin: auto;
+    width: 1550px;
+    height: 150px;
+    position: relative;
+}
+
+/*.top_42*/
+/*{*/
+/*    height: 20px;*/
+/*    top: 10px;*/
+/*    right: 15px;*/
+/*    position: absolute;*/
+/*}*/
+
