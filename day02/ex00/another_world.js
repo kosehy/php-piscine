@@ -1,3 +1,15 @@
+// ************************************************************************** //
+//                                                                            //
+//                                                        :::      ::::::::   //
+//   another_world.js                                   :+:      :+:    :+:   //
+//                                                    +:+ +:+         +:+     //
+//   By: sko <marvin@42.fr>                         +#+  +:+       +#+        //
+//                                                +#+#+#+#+#+   +#+           //
+//   Created: 2019/12/05 21:34:33 by sko               #+#    #+#             //
+//   Updated: 2019/12/05 21:34:38 by sko              ###   ########.fr       //
+//                                                                            //
+// ************************************************************************** //
+
 // Same funcion like epur_str in basic exam
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
