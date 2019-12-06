@@ -17,7 +17,6 @@
 
 function convertMois(mois)
 {
-    mois.toUpperCase();
     switch(mois)
     {
         case "janvier":
@@ -49,7 +48,6 @@ function convertMois(mois)
 
 function convertJournee(journee)
 {
-    journee.toUpperCase();
     switch(journee)
     {
         case "lundi":
@@ -68,18 +66,20 @@ function convertJournee(journee)
             return (7);
     }
 }
-var param = new RegExp('((lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)) ([0-9]{2}) (janvier|fvrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre) ([0-9]{4}) ([0-9]{2}):([0-9]{2}):([0-9]{2})');
-if(process.argv[2])
-    var lowerCase = process.argv[2].toLowerCase();
-    if(lowerCase.match(param)){
+var input = process.argv[2];
+if(input !== undefined) {
+    var param = new RegExp('((lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)) ([0-9]{2}) (janvier|fvrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre) ([0-9]{4}) ([0-9]{2}):([0-9]{2}):([0-9]{2})');
+
+    var lowerCase = input.toLowerCase();
+    if (lowerCase.match(param)) {
         dateArr = lowerCase.split(' ');
         dateArr[2] = convertMois(dateArr[2]);
         dateArr[0] = convertJournee(dateArr[0]);
         // utc get the universal time from given input
-        correntTime = new Date(Date.UTC(dateArr[3], dateArr[2] - 1, dateArr[1], dateArr[4].substring(0,2), dateArr[4].substring(3,5), dateArr[4].substring(6,8)));
+        correntTime = new Date(Date.UTC(dateArr[3], dateArr[2] - 1, dateArr[1], dateArr[4].substring(0, 2), dateArr[4].substring(3, 5), dateArr[4].substring(6, 8)));
         // reduce one hours from universal time to get paris time.
-        outputTime = new Date (correntTime.valueOf() - 60 * 60000);
+        outputTime = new Date(correntTime.valueOf() - 60 * 60000);
         console.log(outputTime.getTime() / 1000);
-    }
-    else
+    } else
         console.log("Wrong Format");
+}
