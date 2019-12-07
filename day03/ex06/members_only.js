@@ -9,7 +9,7 @@
 //   Updated: 2019/12/06 21:30:53 by sko              ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
-// need cookies basic-auth library
+// need basic-auth library
 // basic-auth : https://www.npmjs.com/package/basic-auth
 // buffer     : https://nodejs.org/api/buffer.html#buffer_new_buffer_buffer
 var http = require('http');

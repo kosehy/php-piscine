@@ -32,4 +32,4 @@ http.createServer(onRequest).listen(8080);
 
 // when succesfully connected to server, keep show the below server status and port information
 console.log('Server Status: [RUNNING]');
-console.log('Server listening on port \'8080\'.');
+console.log("Server listening at '127.0.0.1' on port '8080'.");
