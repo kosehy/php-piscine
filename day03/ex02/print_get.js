@@ -21,11 +21,11 @@ function onRequest(request, response) {
     response.writeHead(200, { "Context-Type": "text/plain" });
     try {
         // parse the params in to managable object and store to key variable
-        var params = parse_url.parse(request.url).query.params;
-        for (var key in params) {
+        var params = parse_url.parse(request.url).query.text;
+        for (var i in text) {
             // if param is exists, print out the both key and params
-            if (params.hasOwnProperty(key))
-                response.write(`${key}: ${params[key]}\n`);
+            if (params.hasOwnProperty(i))
+                response.write(`${i}: ${text[i]}\n`);
         }
         response.end();
     } catch (err) {
