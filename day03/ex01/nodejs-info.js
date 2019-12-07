@@ -9,7 +9,7 @@
 //   Updated: 2019/12/06 14:37:08 by sko              ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
-
+// need nodejs-info nodejs library
 // http: https://www.npmjs.com/package/http
 // nodeInfo: https://www.npmjs.com/package/nodeinfo
 // library for accessing or displaying NodeJS/NPN/System information

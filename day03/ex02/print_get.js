@@ -9,7 +9,7 @@
 //   Updated: 2019/12/06 15:01:18 by sko              ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
-
+// need ulrparser nodejs library
 // ulrparser :  https://www.npmjs.com/package/urlparser
 // provides with an url parser that deconstructs an url into a managable
 // object and back to a string
