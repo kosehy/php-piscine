@@ -1,4 +1,4 @@
-SELECT id_distrib
+SELECT name
 FROM distrib
 WHERE (id_distrib = 42
 AND `name` LIKE '%y%y%'

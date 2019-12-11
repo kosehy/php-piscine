@@ -1,10 +1,2 @@
-INSERT INTO `ft_table` (`id`,`login`,`group`,`creation_date`)
-VALUES ('1','loki','staff','2013-05-01');
-INSERT INTO `ft_table` (`id`,`login`,`group`,`creation_date`)
-VALUES ('2','scadoux','student','2014-01-01');
-INSERT INTO `ft_table` (`id`,`login`,`group`,`creation_date`)
-VALUES ('3','chap','staff','2011-04-27');
-INSERT INTO `ft_table` (`id`,`login`,`group`,`creation_date`)
-VALUES ('4','bambou','staff','2014-03-01');
-INSERT INTO `ft_table` (`id`,`login`,`group`,`creation_date`)
-VALUES ('5','fantomet','staff','2010-04-03');
+SELECT last_name, first_name FROM user_card
+WHERE last_name LIKE "%-%" OR first_name LIKE "%-%" ORDER BY last_name, first_name ASC;

@@ -1,4 +1,4 @@
-SELECT u1.last_name AS NAME, u1.first_name, s1.price
+SELECT UPPER(u1.last_name) AS NAME, u1.first_name, s1.price
 FROM `member` AS m1
 INNER JOIN subscription AS s1
     ON s1.id_sub = m1.id_sub

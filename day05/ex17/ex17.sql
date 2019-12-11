@@ -1,3 +1,2 @@
-SELECT COUNT(id_member)
-FROM `member_history`
-WHERE DATE BETWEEN '2006-10-30' AND '2007-07-27' OR DATE LIKE "%-12-24%";
+SELECT COUNT(id_sub) AS nb_susc, FLOOR(AVG(price)) AS av_susc, MOD(SUM(duration_sub,42)) AS ft
+FROM subscription;

@@ -1,1 +1,1 @@
-create database db_;
+CREATE DATABASE db_sko;

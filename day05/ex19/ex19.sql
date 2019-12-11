@@ -1,2 +1,2 @@
-SELECT COUNT(duration) AS 'nb_short-films' FROM film
-WHERE duration <= 42;
+SELECT DATEDIFF(MAX(`date`), MIN(`date`)) AS `uptime`
+FROM member_history;
