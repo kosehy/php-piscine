@@ -1,0 +1,3 @@
+SELECT COUNT(id_member)
+FROM `member_history`
+WHERE DATE BETWEEN '2006-10-30' AND '2007-07-27' OR DATE LIKE "%-12-24%";
